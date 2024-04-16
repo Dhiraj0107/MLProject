@@ -17,7 +17,7 @@ from src.utils import save_object
 
 @dataclass
 class ModelTrainerConfig:
-    trained_model_file_path=os.path.join("artifacts","model.pkl")
+    trained_model_file_path=os.path.join('artifacts',"model.pkl")
 
 class ModelTrainer:
     def __init__(self):
@@ -70,8 +70,18 @@ class ModelTrainer:
 
             logging.info("Model training completed")
 
+
             test_accuracy=model.evaluate(X_test,y_test,verbose=0)
+
+            # save_object(
+            #     file_path=self.model_trainer_config.trained_model_file_path,
+            #     obj=model
+            # )
+
+            model.save("artifacts/model.keras")
+
             return test_accuracy
+                
             
 
 
