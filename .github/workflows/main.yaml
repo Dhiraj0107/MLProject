@@ -27,12 +27,10 @@ jobs:
 
       - name: Debug Information
         run: |
-          echo "Registry: ${{ steps.login-ecr.outputs.registry }}"
-          echo "Repository Name: ${{ secrets.ECR_REPOSITORY_NAME }}"
-          echo "AWS Region: ${{ secrets.AWS_REGION }}"
-          echo "AWS Access Key ID: ${{ secrets.AWS_ACCESS_KEY_ID }}"
-          echo "AWS Secret Access Key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}"
-
+          echo "AWS Region: $AWS_REGION"
+          echo "AWS Access Key ID: $AWS_ACCESS_KEY_ID"
+          echo "AWS Secret Access Key: $AWS_SECRET_ACCESS_KEY"
+  
   build-and-push-ecr-image:
     name: Continuous Delivery
     needs: integration
