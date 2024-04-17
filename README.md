@@ -99,5 +99,24 @@ docker images
 
 ![image](https://github.com/Dhiraj0107/MLProject/assets/118677714/eae2694e-5a85-45fc-baa9-4360ab9a84d3)
 
+#### Created EC2 instance to deploy the application to Ubuntu virtual server and deployed the application
+
+![image](https://github.com/Dhiraj0107/MLProject/assets/118677714/a3b7f043-8a92-4975-9506-d6377896e4f4)
+
+![image](https://github.com/Dhiraj0107/MLProject/assets/118677714/58c9e87d-99f6-4e71-aeb5-e193b32ab188)
+
+#### CI/CD Pipeline
+
+![image](https://github.com/Dhiraj0107/MLProject/assets/118677714/8c079991-e36a-451f-b7b0-8924c9637ea0)
+
+#### Runner for running deployment jobs
+
+![image](https://github.com/Dhiraj0107/MLProject/assets/118677714/dfe913f8-b4a7-44f9-a31c-334139c459d7)
+
+#### Repository secrets used in main.yaml file for CI/CD automation
+
+![image](https://github.com/Dhiraj0107/MLProject/assets/118677714/172b6ffc-a132-4524-b3e0-aa0bdd125fa0)
+
+
 
 
