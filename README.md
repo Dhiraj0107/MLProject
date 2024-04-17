@@ -56,3 +56,48 @@ The Dockerfile defines the instructions for building a Docker image for the appl
 
 The main.yaml file contains the configuration for the CI/CD pipeline using GitHub Actions. It automates the deployment process to Amazon ECR and EC2 whenever changes are made to the GitHub repository. The pipeline ensures seamless integration and deployment of the application.
 
+
+### Next Steps
+
+#### After creating the above files, created a virtual environment and moved these files to the GitHub repository from VSCode using the below commands.
+
+##### Create Virtual environment:
+conda create -p venv python==3.9.12 -y
+conda activate venv/
+
+##### Run the app:
+python src/components/data_ingestion.py
+
+##### Move to GitHub Repository:
+git init
+git add README.md
+git config --global user.email "dhiraj0107@gmail.com"
+git config --global user.name "Dhiraj0107"
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Dhiraj0107/MLProject.git
+git remote -v
+git pull
+git add .
+git status
+git commit -m "Add yaml file for workflow"
+git push -u origin main
+
+#### Next, deployed the application to Docker using the below command.
+docker build -t flight-delay .
+
+#### Command to check the image.
+docker images
+
+#### Created IAM user with required policies to work with ECR and EC2.
+
+![image](https://github.com/Dhiraj0107/MLProject/assets/118677714/f25998f7-fb42-4512-ad12-e84f2f7cadb2)
+
+![image](https://github.com/Dhiraj0107/MLProject/assets/118677714/607e4331-4ae6-4be0-bd58-4b5a3dffdee2)
+
+#### Created private repository in Elastic Container Registry (ECR) for uploading docker image.
+
+![image](https://github.com/Dhiraj0107/MLProject/assets/118677714/eae2694e-5a85-45fc-baa9-4360ab9a84d3)
+
+
+
