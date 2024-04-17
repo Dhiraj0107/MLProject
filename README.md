@@ -62,32 +62,32 @@ The main.yaml file contains the configuration for the CI/CD pipeline using GitHu
 #### After creating the above files, created a virtual environment and moved these files to the GitHub repository from VSCode using the below commands.
 
 ##### Create Virtual environment:
-conda create -p venv python==3.9.12 -y
-conda activate venv/
+- conda create -p venv python==3.9.12 -y
+- conda activate venv/
 
 ##### Run the app:
-python src/components/data_ingestion.py
+- python src/components/data_ingestion.py
 
 ##### Move to GitHub Repository:
-git init
-git add README.md
-git config --global user.email "dhiraj0107@gmail.com"
-git config --global user.name "Dhiraj0107"
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Dhiraj0107/MLProject.git
-git remote -v
-git pull
-git add .
-git status
-git commit -m "Add yaml file for workflow"
-git push -u origin main
+- git init
+- git add README.md
+- git config --global user.email "dhiraj0107@gmail.com"
+- git config --global user.name "Dhiraj0107"
+- git commit -m "first commit"
+- git branch -M main
+- git remote add origin https://github.com/Dhiraj0107/MLProject.git
+- git remote -v
+- git pull
+- git add .
+- git status
+- git commit -m "Add yaml file for workflow"
+- git push -u origin main
 
 #### Next, deployed the application to Docker using the below command.
-docker build -t flight-delay .
+- docker build -t flight-delay .
 
 #### Command to check the image.
-docker images
+- docker images
 
 #### Created IAM user with required policies to work with ECR and EC2.
 
