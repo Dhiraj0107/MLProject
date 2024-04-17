@@ -1,12 +1,12 @@
 ## Flight Cancellation Prediction
 
 
-#### Overview
+### Overview
 
 This project aims to predict whether a flight will be canceled or not using deep learning techniques. It utilizes an imbalanced dataset, which has been addressed through the Synthetic Minority Over-sampling Technique (SMOTE) for oversampling. The model is deployed as a Docker container and can be deployed to AWS ECR and EC2 for scalable deployment.
 
 
-#### Features
+### Features
 
 - Predicts flight cancellation.
 - Handles imbalanced dataset using SMOTE.
