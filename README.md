@@ -89,6 +89,11 @@ The main.yaml file contains the configuration for the CI/CD pipeline using GitHu
 #### Command to check the image.
 - docker images
 
+#### Docker Image
+
+![image](https://github.com/Dhiraj0107/MLProject/assets/118677714/b583bd8c-e5d5-441b-96f1-81d49e2c8791)
+
+
 #### Created IAM user with required policies to work with ECR and EC2.
 
 ![image](https://github.com/Dhiraj0107/MLProject/assets/118677714/f25998f7-fb42-4512-ad12-e84f2f7cadb2)
