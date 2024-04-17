@@ -117,6 +117,11 @@ The main.yaml file contains the configuration for the CI/CD pipeline using GitHu
 
 ![image](https://github.com/Dhiraj0107/MLProject/assets/118677714/172b6ffc-a132-4524-b3e0-aa0bdd125fa0)
 
+#### Commands to install docker on EC2 instance
 
+- curl -fsSL https://get.docker.com -o get-docker.sh
+- sudo sh get-docker.sh
+- sudo usermod -aG docker ubuntu
+- newgrp docker
 
 
